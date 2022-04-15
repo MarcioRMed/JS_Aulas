@@ -52,3 +52,4 @@ console.log('IMC ' + imc.toFixed(2)+ ' -> indice de massa corporal')
 
 
 // aula ficou em 7min 38seg
+// https://www.youtube.com/watch?v=yFrd7712G3I&list=PLnex8IkmReXxZEXje06kW1uCwm5iC8M_Z&index=5&ab_channel=ProfessorEdsonMaia
