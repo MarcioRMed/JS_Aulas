@@ -48,8 +48,44 @@ let imc = pessoa.peso / (pessoa.altura * pessoa.altura)
 
 console.log('IMC ' + imc.toFixed(2)+ ' -> indice de massa corporal')
 
+// ALTERAR / ATUALIZAR VALOR de propriedades
+pessoa.nome = "Edson Maia"
+produtos.descricao = ['Arroz']
+produtos.preco = [4.99]
+
+// usando spreed operator
+produtos.descricao = [...produtos.descricao, 'Feijao', 'Trigo']
+produtos.preco = [...produtos.preco, 9.99, 4.79]
+
+// Usando spreed operator em objetos const
+carros.marca = [...carros.marca, 'WV']
+carros.modelo = [...carros.modelo, 'Fusca']
+carros.ano = [...carrros.ano, 1979]
 
 
 
-// aula ficou em 7min 38seg
-// https://www.youtube.com/watch?v=yFrd7712G3I&list=PLnex8IkmReXxZEXje06kW1uCwm5iC8M_Z&index=5&ab_channel=ProfessorEdsonMaia
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
