@@ -27,6 +27,8 @@ box[0].setAttribute('class', 'amarelo')
 // box[0].removeAttribute('class')
 
 // MODOS DE COR
+
+// modo dark/light / trpoca cor fundo da pag
 let tela = document.querySelector('main')
 
 let btnDark = document.querySelector('#btdark')
@@ -52,6 +54,8 @@ function modoLight(){
     tela.classList.remove('dark')
 }
 
+
+// troca cor do botão
 let btFundoImg = document.querySelector('#btFundoImg')
 
 btFundoImg.addEventListener('click', trocaFundoBotao)

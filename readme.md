@@ -14,8 +14,8 @@ Aulas
 6-
 7- DOM Manipulando com JavaScript
 8- DOM Manipular CSS com JavaScript
-9-
-10-
+9- Funções - Arrow function
+10- Eventos
 11-
 12-
 13-
