@@ -6,18 +6,23 @@ Aulas de JavaScritp - prof. Edson Maia - Moderno
 
 
 Aulas
-1-
-2-
-3-
-4-
-5-
-6-
-7- DOM Manipulando com JavaScript
-8- DOM Manipular CSS com JavaScript
-9- Funções - Arrow function
-10- Eventos
-11-
-12-
-13-
-14-
-15-
+1 -
+2 -
+3 -
+4 -
+5 -
+6 -
+7 - DOM Manipulando com JavaScript
+8 - DOM Manipular CSS com JavaScript
+9 - Funções - Arrow function
+10 - Eventos
+11 - Estruturas Condicionais - if else e switch case
+12 - Estruturas de Repetição - for, forEach, while, do while
+13 - Calculadora de IMC
+14 -
+15 -
+16 -
+17 -
+18 -
+19 - 
+20 -
