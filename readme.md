@@ -19,7 +19,7 @@ Aulas
 11 - Estruturas Condicionais - if else e switch case
 12 - Estruturas de Repetição - for, forEach, while, do while
 13 - Calculadora de IMC - manupular dados formúlario
-14 -
+14 - Calcular Média
 15 -
 16 -
 17 -
