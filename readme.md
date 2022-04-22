@@ -21,8 +21,8 @@ Aulas
                     
                     Aplicações
 13 - Calculadora de IMC - manupular dados formúlario
-14 - Calcular Média
-15 -
+14 - Calcular Média com flash message
+15 - Dado Virtual D6 com Animação ou Virtual Dice Animate
 16 -
 17 -
 18 -
