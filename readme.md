@@ -23,8 +23,13 @@ Aulas
 13 - Calculadora de IMC - manupular dados formúlario
 14 - Calcular Média com flash message
 15 - Dado Virtual D6 com Animação ou Virtual Dice Animate
-16 -
-17 -
+16 - Jogo advinhação de Números Secreto Mentalista
+17 - Conversor de Moedas
 18 -
 19 - 
 20 -
+21 -
+22 -
+23 -
+24 -
+25 -
