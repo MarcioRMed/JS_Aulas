@@ -5,49 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advinha número secreto</title> 
-    <link rel="stylesheet" href="./css/style16.css">
+    <link rel="stylesheet" href="./css/style17.css">
          
 
 </head>
-<body onload="gerarNumeroSecreto()"> 
+<body> 
     
-    <main class="tela-inicial">
-        <div id="titulo"><h1>Adivinha número secreto</h1></div>
-        <p class="centro" id="dica">Digite um número entre 1 e 10</p>
+    <main class="tela-principal">
+        <h1>Conversor de Moeda</h1>
         <section class="conteudos">
-            <input type="number"
-                   step="1"
-                   min="1"
-                   max="10"
-                   name="inputNumero"
-                   id="inputNumero"
-                   class="input animar"
-                   onblur="validarNumeroDigitado(this.value)"
-                   onclick="tocarMusicaDeFundo(); ativarBtnChutar()"
-                   >
+            <div class="form-group">
+                <label for="valorEmReal">R$</label>
+                <input type="number"
+                name="valorEmReal"
+                id="valorEmReal"
+                class="input"
+                step="0.0.1"
+                min="0.00"
+                max="9999999999.9"
+                value=""
+                tabindex="1"
+                onclick="ativarBotao()"
+                onchange="ativarBotao()"
+                autofocus
+                required>
+            </div>
 
-            <button id="btnChutar" class="botao" onclick="jogar()">Chutar</button>
-        
+
+            <div class="form-group">
+                <input 
+                type="radio"
+                id="dolar"
+                name="moedaEstrangeira"
+                class="input radio"
+                value="Dólar"
+                tabindex="2">
+                <label for="dolar">Dólar</label>
+            
+            <input 
+            type="radio" 
+            id="euro"
+            name="moedaEstrangeira" 
+            class="input radio"
+            value="Euro"
+            tabindex="3">
+            <label for="euro">Euro</label>
+
+            <input 
+            type="radio"
+            id="libra"
+            name="moedaEstrangeira"
+            class="input radio"
+            value="Libra"
+            tabindex="4">
+            <label for="libra">Libra</label>
+
+            <input 
+                type="radio"
+                id="bitcoins"
+                name="moedaEstrangeira"
+                class="input radio"
+                value="Bitcoins"
+                 tabindex="5">
+            <label for="bitcoins">Bitcoins</label>
+                        
+            </div>
+
+            <div class="form-group">
+                <button 
+                    class="desativar botao" 
+                    id="btnConverter" 
+                    onclick="ativarBotao(); bloquearBotao()" 
+                    disabled
+                    > Converter
+                </button>
+
+                <button 
+                    type="reset"
+                    class="botao"
+                    id="btnLimpar"
+                    tabindex="7"
+                    >limpar
+                </button>
+            </div>
+        </section>
+
+            <div class="instrucoes">
+                <p class="centro" id="aviso">Digite o valor, escolha a moeda e converter</p>
+            </div>
             <br>
 
-            <button id="btnSom" class="botao" onclick="ativarDesativarMusica()" >&#9835</button>
-            <p class="centro" id="aviso"></p>
+            <div class="instrucoes" style="background: #222; border: 0;"> 
+                <figure class="centro" id="imgMoedas">
+                    img
+                </figure>
+            </div>
 
-            <!-- Audio música de fundo -->
-            <audio preload autoplay Loop
+
+
+
+
+
+
+       
             
-            id="musicaDeFundo"
-            src="assets/abertura-the-mentalist.mp3"></audio>
-
-
-
-
-
-
-        </section>
+        
        
 
-
+                                                           
 
 
 
@@ -59,6 +124,6 @@
 
 
  
-    <script src="/js/aula16.js"></script>
+    <script src="/js/aula17.js"></script>
 </body>
 </html>

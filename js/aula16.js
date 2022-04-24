@@ -78,7 +78,7 @@ function mensagemRapida(mensagem){
         aviso.classList.remove('acertou')
         aviso.classList.remove('errou')
         inputNumero.value = ''
-    },3000)
+    },5000)
 }
 
 function gameOver(situacao){
