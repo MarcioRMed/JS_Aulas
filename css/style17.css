@@ -161,7 +161,7 @@ label:first-child {
 }
 
 .animar {
-    animation: piscar 1s infinite alternate;
+    animation: piscar 1.5s infinite alternate;
 }
 
 .aparecer {
