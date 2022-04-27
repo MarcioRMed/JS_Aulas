@@ -122,6 +122,7 @@ function desbloquearAlternativas() {
 }
 
 function verificarSeAcertou(nQuestao, resposta) {
+    
     let numeroDaQuestao = nQuestao.value;
     console.log("Questao " + numeroDaQuestao);
 
@@ -167,7 +168,7 @@ function fimDoJogo(){
     numQuestao.textContent = ''
 
     let pont = ''
-    pontos == 0 ? pont = 'ponto' : pont ='pontos'
+    pontos == 0 ? pont = ' ponto ' : pont =' pontos '
 
     pergunta.textContent = 'Você conseguiu ' + pontos + '' + pont
 
@@ -189,12 +190,5 @@ function fimDoJogo(){
         pontos = 0 // zerar o placar
         location.reload();
     },3000)
-
-
-
-
-
-
-
 
 }
