@@ -26,7 +26,7 @@ Aulas
 16 - Jogo advinhação de Números Secreto Mentalista
 17 - Conversor de Moedas + validações
 18 - Conversor de Temperatura - Celsius, Fahrenheit, Kelvin
-19 - 
+19 - Perguntas e respostas - Quiz extensível e com placar
 20 -
 21 -
 22 -
