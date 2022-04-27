@@ -2,6 +2,10 @@ Aulas de JavaScritp - prof. Edson Maia - Moderno
 
  link aulas
 
+
+Os arquivos javascript e html foram todos digitados por mim, acompanhando as aulas, copie e colei apenas o css dos aquivos que o professor disponibilizou.
+
+
  https://www.youtube.com/watch?v=6d6IV3SQnIM&list=PLnex8IkmReXxZEXje06kW1uCwm5iC8M_Z&index=3&ab_channel=ProfessorEdsonMaia 
 
 
@@ -28,7 +32,7 @@ Aulas
 - 18 - Conversor de Temperatura - Celsius, Fahrenheit, Kelvin
 - 19 - Perguntas e respostas - Quiz extensível e com placar
 - 20 - Quiz 2.0 - refatoração
-- 21 -
+- 21 - Quz 3.0
 - 22 -
 - 23 -
 - 24 -
