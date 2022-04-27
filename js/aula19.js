@@ -89,7 +89,7 @@ numQuestao.textContent = q1.numQuestao;
 pergunta.textContent = q1.pergunta;
 a.textContent = q1.alternativaA;
 b.textContent = q1.alternativaB;
-c.textContent = q1.alternativaB;
+c.textContent = q1.alternativaC;
 
 // Configurar o value inicial da 1a questao completa
 a.setAttribute("value", "1A");
