@@ -1,0 +1,105 @@
+// Desafio - Card de Lutadores
+// Elementos da 1a carta apenas
+
+let imgFoto = document.querySelector('#foto')
+let nome = document.querySelector('#nome')
+let nacionalidade = document.querySelector('#nacionalidade')
+let idade = document.querySelector('#idade')
+let peso = document.querySelector('#peso')
+let altura = document.querySelector('#altura')
+
+// section que acomoda todas as cartas
+let sectionConteudos = document.querySelector('.conteudos')
+
+// endereco do arquivo json
+const url ='cards.json'
+
+function pegarDados(i){
+    fetch(url)
+        .then(response => response.json())
+        .then(dados => {
+            if(dados.erro){
+                console.log('Erro ao acessar o JSON')
+                return
+            }
+            console.log(dados)
+        
+            // quantidade de Lutadores
+            let qtdLutadores = (dados.lutadores.length)
+            console.log('Quant. de Lutadores ' + qtdLutadores)
+            // pegar o valor de i no parametro
+            atribuirDados2(dados, i)       
+        })
+}//fim pegarDados
+
+// atribuir dados individualmente, ou seja, so para uma carta
+// ela so funciona se for chamada dentro da funcao pegarDados
+
+function atribuirDados(dados, i){
+    imgFoto.setAttribute('src', 'img/pride' + dados.lutadores[i].foto)
+    nome.textContent = dados.lutadores[i].nome
+    nacionalidade.textContent = dados.lutadores[i].nacionalidade
+    idade.textContent = dados.lutadores[i].idade + ' anos'
+    peso.textContent = (dados.lutadores[i].peso).toString(2) + ' Kg'
+    altura.textContent = (dados.lutadores[i].altura).toString(2) + ' m'
+}
+
+// seleciona todo os card por class - array de class
+let imgsFoto = document.getElementsByClassName('foto')
+let nomesLutadores = document.getElementsByClassName('nome')
+let nacionalidadeLutadores = document.getElementsByClassName('nacionalidade')
+let idadeLutadores = document.getElementsByClassName('idade')
+let pesoLutadores = document.getElementsByClassName('peso')
+let alturaLutadores = document.getElementsByClassName('altura')
+
+// atribuir dados para todos os Cards
+// selecionamos eles por class, com isso temos um array para cada elemento
+// agora vamos atribuir para cada posicao os valores que pegamos
+
+function atribuirDados2(dados, i){
+    imgsFoto[i].setAttribute('src', 'img/pride/' + dados.lutadores[i].foto)
+    nomesLutadores[i].textContent = dados.lutadores[i].nome
+    nacionalidadeLutadores[i].textContent = dados.lutadores[i].nacionalidade
+    idadeLutadores[i].textContent = dados.lutadores[i].idade = ' anos'
+    pesoLutadores[i].textContent = dados.lutadores[i].peso + ' Kg'
+    alturaLutadores[i].textContent = dados.lutadores[i].altura + ' m'
+}
+
+// usamos as funções createElement e appendChild
+// para criar article(elemento html que vai acomodar cada carta)
+// criamos tambem img, h2 3 h3. Depois colocamos eles dentro deo article
+
+function desenharCarta(id){
+    // card
+    let carta = document.createElement('article')
+    carta.setAttribute('class', 'card')
+    sectionConteudos.appendChild(carta)
+
+    // imagem dentro do card
+    let imagem = document.createElement('img')
+    carta.appendChild(imagem)
+    imagem.setAttribute('class', 'foto')
+    imagem.setAttribute('src', 'img/pride/pride_fc.jpg')
+
+    // nome do lutador
+    let nomeLutador = document.createElement('h2')
+    nomeLutador.setAttribute('class' , 'nome')
+    carta.appendChild(nomeLutador)
+    nomeLutador.textContent = 'Nome'
+
+    // nacionalidae do lutador
+    let nacionalidadeLutador = document.createElement('h3')
+    nacionalidadeLutador.setAttribute('class' , 'nacionalidade')
+    carta.appendChild(nacionalidadeLutador)
+    nacionalidadeLutador.textContent = 'Nacionalidade'
+
+
+
+
+
+
+
+
+
+
+}

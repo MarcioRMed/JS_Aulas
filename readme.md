@@ -1,4 +1,4 @@
-Aulas de JavaScritp - prof. Edson Maia - Moderno
+# Aulas de JavaScritp - prof. Edson Maia - Moderno 2021
 
  link aulas
 
@@ -9,7 +9,7 @@ Os arquivos javascript e html foram todos digitados por mim, acompanhando as aul
  https://www.youtube.com/watch?v=6d6IV3SQnIM&list=PLnex8IkmReXxZEXje06kW1uCwm5iC8M_Z&index=3&ab_channel=ProfessorEdsonMaia 
 
 
-Aulas
+## Aulas
 - 1 -
 - 2 -
 - 3 -
@@ -23,7 +23,7 @@ Aulas
 - 11 - Estruturas Condicionais - if else e switch case
 - 12 - Estruturas de Repetição - for, forEach, while, do while
                     
-                    Aplicações
+## Aplicações
 - 13 - Calculadora de IMC - manupular dados formúlario
 - 14 - Calcular Média com flash message
 - 15 - Dado Virtual D6 com Animação ou Virtual Dice Animate
@@ -34,6 +34,6 @@ Aulas
 - 20 - Quiz 2.0 - refatoração
 - 21 - Quiz 3.0 - fetch - json
 - 22 - Relógio smart com hora, data e previsão tempo
-- 23 -
+- 23 - Desafio Refatoração - card Lutadores com Json
 - 24 -
 - 25 -
