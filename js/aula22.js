@@ -43,3 +43,114 @@ function moveRelogio(){
     setTimeout('moveRelogio()',1000)
 
 }
+
+function pegarData(){
+    let diaDaSemana = dataHora.getDay()
+    let dia = dataHora.getDate()
+    let mes = dataHora.getMonth()+1
+    let ano = dataHora.getFullYear()
+
+    let strDia = new String(dia)
+    let strMes = new String(mes)
+
+    if(strDia.length == 1)  mes = '0' + dia
+    if(strMes.length == 1)  mes = '0' + mes
+
+
+    switch(diaDaSemana){
+        case 0:
+            diaDaSemana = 'DOM'
+        break;
+      
+        case 1:
+            diaDaSemana = 'SEG'
+        break;
+      
+        case 2:
+            diaDaSemana = 'TER'
+        break;
+      
+        case 3:
+            diaDaSemana = 'QUA'
+        break;
+      
+        case 4:
+            diaDaSemana = 'QUI'
+        break;
+      
+        case 5:
+            diaDaSemana = 'SEX'
+        break;
+      
+        case 6:
+            diaDaSemana = 'SAB'
+        break;
+      
+    }//fim switch case
+
+    let dataAtual = dia + '/' + mes + '/' + ano
+
+    semana.textContent = diaDaSemana
+    data.textContent = dataAtual
+}
+
+pegarData()
+
+var options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+}
+
+// estilo de datas
+// let teste = new Date()
+
+// console.log(teste.toLocaleString('pt-BR'))
+// // 28/04/2022 00:09:27
+
+// console.log(teste.toLocaleDateString('pt-BR', options))
+// // quinta-feira, 28 de abril de 2022
+
+// console.log(teste.toLocaleTimeString('pt-BR'))
+// // 00:12:25
+
+
+function getUserPosition(){
+    let url = ''
+    navigator.geolocation.getCurrentPosition(
+        (pos)=>{
+            let lat = pos.coords.latitude
+            let long = pos.coords.longitude
+            url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&APPID=622296cd4fda08b69c46ccfa980f968d`;
+            fetchApi(url)
+            // console.log(url)
+            // console.log(lat)
+            // console.log(long)
+        }
+    )
+}
+
+function fetchApi(url){
+    let city = document.querySelector('.city')
+    let temperature = document.querySelector('#temp')
+    let humidity = document.querySelector('#umidad')
+
+    fetch(url)
+    .then((data)=> {
+        // console.log(data)
+        return data.json()
+    })
+    .then((data)=>{
+        let tempInCelsius = ((5/9)* (data.main.temp - 32)).toFixed(1)
+        city.textContent = data.name
+        temperature.innerHTML = tempInCelsius
+        humidity.innerHTML = data.main.humidity
+    })
+    .catch((err)=>{
+        city.innerText = `Impossível acessar o OpenWeather. Verifique a sua conexão.`
+        temperature.innerHTML = `-`
+    })
+}
+
+getUserPosition()
