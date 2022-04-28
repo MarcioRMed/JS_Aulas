@@ -32,8 +32,8 @@ Aulas
 - 18 - Conversor de Temperatura - Celsius, Fahrenheit, Kelvin
 - 19 - Perguntas e respostas - Quiz extensível e com placar
 - 20 - Quiz 2.0 - refatoração
-- 21 - Quz 3.0
-- 22 -
+- 21 - Quiz 3.0 - fetch - json
+- 22 - Relógio smart com hora, data e previsão tempo
 - 23 -
 - 24 -
 - 25 -

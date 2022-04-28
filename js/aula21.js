@@ -37,7 +37,7 @@ const url = 'data.json'
 
 function pegarDados(i){
     fetch(url).then(response =>{
-
+        
         return response.json(); //formato json
     
     }).then(data => {
@@ -45,9 +45,11 @@ function pegarDados(i){
             console.log('Erro ao acessar o JSON')
             return
         }
-    
+        // console.log(data)
+        
     // passar a quantidade de questoes para a variavel
     let qtdQuestoes = (data.questoes.length) -1
+    // console.log(qtdQuestoes)
 
     // escrever a qtdQuestoes para total
     total.textContent = parseInt(qtdQuestoes)
@@ -55,9 +57,9 @@ function pegarDados(i){
     // passe o valor de i no parametro
     atribuirDados(data, i)
     
-    
-    })
+})
 } //fim de pegar dados
+
 
 function atribuirDados(data, i){
     if(i >= data.questoes.length){
@@ -72,12 +74,13 @@ function atribuirDados(data, i){
     b.textContent = data.questoes[i].alternativaB;
     c.textContent = data.questoes[i].alternativaC;  
     d.textContent = data.questoes[i].alternativaD;
-
+    
     numero.textContent = data.questoes[i].numQuestao    
-
+    
     let certa = document.querySelector('#correct')
     certa.value = data.questoes[i].correta
-    // console.log(resposta)
+    
+   
 }
 
 
