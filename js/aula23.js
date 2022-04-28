@@ -22,7 +22,7 @@ function pegarDados(i){
                 console.log('Erro ao acessar o JSON')
                 return
             }
-            console.log(dados)
+            // console.log(dados)
         
             // quantidade de Lutadores
             let qtdLutadores = (dados.lutadores.length)
@@ -68,7 +68,6 @@ function atribuirDados2(dados, i){
 // usamos as funções createElement e appendChild
 // para criar article(elemento html que vai acomodar cada carta)
 // criamos tambem img, h2 3 h3. Depois colocamos eles dentro deo article
-
 function desenharCarta(id){
     // card
     let carta = document.createElement('article')
@@ -83,23 +82,48 @@ function desenharCarta(id){
 
     // nome do lutador
     let nomeLutador = document.createElement('h2')
-    nomeLutador.setAttribute('class' , 'nome')
+    nomeLutador.setAttribute('class', 'nome')
     carta.appendChild(nomeLutador)
     nomeLutador.textContent = 'Nome'
 
-    // nacionalidae do lutador
+    // nacionalidade
     let nacionalidadeLutador = document.createElement('h3')
-    nacionalidadeLutador.setAttribute('class' , 'nacionalidade')
+    nacionalidadeLutador.setAttribute('class', 'nacionalidade')
     carta.appendChild(nacionalidadeLutador)
     nacionalidadeLutador.textContent = 'Nacionalidade'
 
+    // idade 
+    let idadeLutador = document.createElement('h3')
+    idadeLutador.setAttribute('class', 'idade')
+    carta.appendChild(idadeLutador)
+    idadeLutador.textContent = 'idade anos'
 
+    // peso
+    let pesoLutador = document.createElement('h3')
+    pesoLutador.setAttribute('class', 'peso')
+    carta.appendChild(pesoLutador)
+    pesoLutador.textContent = 'peso Kg'
 
+    let alturaLutador = document.createElement('h3')
+    alturaLutador.setAttribute('class', 'altura')
+    carta.appendChild(alturaLutador)
+    alturaLutador.textContent = 'altura m'
 
-
-
-
-
-
-
+    pegarDados(id)
 }
+
+// 1a carta pegamos os dados. Ela ja esta desenhada na tela
+pegarDados(0)
+
+// 2a carta em diante desenhamos em tela usando as funcoes
+// desenharCarta(0)
+
+desenharCarta(1)
+desenharCarta(2)
+desenharCarta(3)
+desenharCarta(4)
+desenharCarta(5)
+desenharCarta(6)
+desenharCarta(7)
+desenharCarta(8)
+desenharCarta(9)
