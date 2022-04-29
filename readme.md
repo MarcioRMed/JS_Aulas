@@ -36,4 +36,19 @@ Os arquivos javascript e html foram todos digitados por mim, acompanhando as aul
 - 22 - Relógio smart com hora, data e previsão tempo
 - 23 - Desafio Refatoração - card  Lutadores com criado dinamicamente com javascript e Json
 - 24 - App Mensagem do Dia com modal e geração de png - biblioteca externa canvas
-- 25 -
+- 25 - Flix - Carrossel js puro
+- 26 -
+- 27 -
+- 28 -
+- 29 -
+- 30 -
+- 31 -
+- 32 -
+- 33 -
+- 34 -
+- 35 -
+- 36 -
+- 37 -
+- 38 -
+- 39 -
+- 40 -

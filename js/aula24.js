@@ -23,5 +23,33 @@ function criarCitacao(){
         criarMensagem(dataFormatada, citacao, autoria)
         window.scroll(0,670)
     }
+}
+
+function abrirModal(){
+    location.href='#abrirModal'
+}
+
+function criarMensagem(data, citacao, autoria){
+    dataCitacao.textContent = data
+    textoCitacao.textContent = citacao
+    autoriaCitacao.textContent = autoria
+
+    download()
 
 }
+
+function download(){
+    html2canvas(citacao00).then(canvas =>{
+        document.body.appendChild(canvas)
+    })
+
+    let aviso2 = document.querySelector('#aviso2')
+    aviso2.textContent = 'Clique com o botão direito e escolha Salvar imagem como...'
+}
+
+const btnLimpar = document.querySelector('#btnLimpar')
+
+btnLimpar.addEventListener('click', ()=>{
+    document.location.reload()
+    window.scroll(0,0)
+})
