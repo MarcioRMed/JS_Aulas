@@ -11,7 +11,6 @@
     <body>
         <main class="tela-principal">
             <!-- Janela Modal -->
-
             <div id="abrirModal" class="modal">
                 <div>
                     <a href="#fechar" title="Fechar" class="fechar">x</a>
@@ -19,7 +18,7 @@
                     <p>É obrigatório escolher uma data, digitar uma citação e autoria</p>
                 </div>
             </div>
-
+            <!-- Formulário -->
             <section class="sectionForm">
                 <h1>App Mensagem do Dia</h1>
                 <p id="aviso">Seu app de mensagem do dia</p>
@@ -49,23 +48,40 @@
 
                         <button type="reset" id="btnLimpar" class="btn">Limpar</button>
                     </div>
-
                 </form>
             </section>
 
+            <p id="aviso2"></p>
+            <!-- contéudo -->
+            <section class="conteudos">
+                <article id="citacao00" class="citacao fundo1">
+                    <h2></h2>
+                    <blockquote></blockquote>
+                    <span></span>
+                </article>
 
+                <!-- Exemplos (ocultos) -->
 
-
-
-
-
-
-
-
-
+                <div id="exemplos" style="display:none;">
+                    <article id="citacao01" class="citacao fundo1">
+                        <h2>04/10/2021</h2>
+                        <blockquote>"A tecnologia move o mundo.</blockquote>
+                        <span>Steve Jobs</span>
+                    </article>
+                    
+                    <article id="citacao02" class="citacao fundo2">
+                        <h2>05/10/2021</h2>
+                        <blockquote>"O espírito humano precisa prevalecer sobre a tecnologia.</blockquote>
+                        <span>Albert Einstein</span>
+                    </article>                                   
+                    
+                    
+                </div>
+            </section>
                 
         </main>
 
         <script src="/js/aula24.js"></script>
+        <script src="/js/html2canvas.js"></script>
     </body>
 </html>
