@@ -30,15 +30,19 @@ Os arquivos javascript e html foram todos digitados por mim, acompanhando as aul
 - 16 - Jogo advinhação de Números Secreto Mentalista
 - 17 - Conversor de Moedas + validações
 - 18 - Conversor de Temperatura - Celsius, Fahrenheit, Kelvin
+### Projeto Perguntas e respostas
 - 19 - Perguntas e respostas - Quiz extensível e com placar
 - 20 - Quiz 2.0 - refatoração
 - 21 - Quiz 3.0 - fetch - json
+<br>
 - 22 - Relógio smart com hora, data e previsão tempo
 - 23 - Desafio Refatoração - card  Lutadores com criado dinamicamente com javascript e Json
 - 24 - App Mensagem do Dia com modal e geração de png - biblioteca externa canvas
+### Projeto estilo Netflix
 - 25 - Flix - Carrossel js puro - parte 1
 - 26 - Flix - modal em Js puro, spa - parte 2
-- 27 -
+- 27 - Flix - com Json - parte 3
+<br>
 - 28 -
 - 29 -
 - 30 -
