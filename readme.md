@@ -35,5 +35,5 @@ Os arquivos javascript e html foram todos digitados por mim, acompanhando as aul
 - 21 - Quiz 3.0 - fetch - json
 - 22 - Relógio smart com hora, data e previsão tempo
 - 23 - Desafio Refatoração - card  Lutadores com criado dinamicamente com javascript e Json
-- 24 -
+- 24 - App Mensagem do Dia com modal e geração de png - biblioteca externa canvas
 - 25 -
