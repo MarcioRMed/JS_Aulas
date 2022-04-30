@@ -80,8 +80,9 @@ function pegarDadosPorCategoria(categoriaId, lista) {
         // passe a categoria no parametro
         //atribuirDadosPorCategoria(dados, categoria)
         let quantDeVideos = dados.videos.length
-        //console.log(quantDeVideos)
-
+        console.log('Quant. de Videos JSON ' + quantDeVideos +' total')
+        
+        // mostra o titulo das categorias no html
         let indiceAtual = categoriaId-1
         titulosCategorias[indiceAtual].textContent = dados.categorias[indiceAtual].titulo
 
@@ -110,9 +111,10 @@ function dadosPorCategoria(categoria) {
 // criamos tambem img. Depois colocamos eles dentro do article
 function criarLiImg(categoriaId, idVideo, nLista) {
     let lista = nLista
+    
     // LI
     let item = document.createElement("li")
-    //console.log(item)
+    // console.log(item)
     lista.appendChild(item)
 
     let imagem = document.createElement("img")
