@@ -43,8 +43,10 @@ Os arquivos javascript e html foram todos digitados por mim, acompanhando as aul
 - 26 - Flix - modal em Js puro, spa - parte 2
 - 27 - Flix - com Json - parte 3
 <br>
-- 28 -
-- 29 -
+- 28 - Não é o foco no momento - Jogo das coordenadas Geográficas - 
+https://www.youtube.com/watch?v=iu1qHmHMVeg&list=PLnex8IkmReXxZEXje06kW1uCwm5iC8M_Z&index=30&ab_channel=ProfessorEdsonMaia
+
+- 29 - To Do List - Lista de tarefas - https://www.youtube.com/watch?v=wqVXNumgl2g&list=PLnex8IkmReXxZEXje06kW1uCwm5iC8M_Z&index=31&ab_channel=ProfessorEdsonMaia
 - 30 -
 - 31 -
 - 32 -
